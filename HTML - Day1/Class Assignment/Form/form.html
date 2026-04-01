@@ -1,0 +1,93 @@
+<body>
+
+    <!-- ========================= -->
+    <!-- SECTION: User Registration Form -->
+    <!-- ========================= -->
+
+    <form action="#" method="post">
+        
+        <!-- TEXT INPUT: Username -->
+        <input type="text" name="username" placeholder="Enter Username" required>
+        <br><br>
+
+        <!-- PASSWORD INPUT -->
+        <input type="password" name="password" placeholder="Enter Password" required>
+        <br><br>
+
+        <!-- EMAIL INPUT -->
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <br><br>
+
+        <!-- NUMBER INPUT -->
+        <input type="number" name="age" placeholder="Enter age " min="1" max="100">
+        <br><br>
+
+        <!-- PHONE INPUT -->
+        <input type="tel" name="phone" placeholder="Enter Phone Number">
+        <br><br>
+
+        <!-- RANGE INPUT -->
+        <!-- Used for selecting value in a range -->
+        <label>Experience Level:</label>
+        <input type="range" name="experience" min="0" max="100" step="10">
+        <br><br>
+
+        <!-- RADIO BUTTONS (Single Selection) -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <br><br>
+
+        <!-- CHECKBOX (Multiple Selection) -->
+        <label>Hobbies:</label>
+        <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="sports"> Sports
+        <br><br>
+
+        <!-- DROPDOWN -->
+        <label>Country:</label>
+        <select name="country">
+            <option value="india" selected>India</option>
+            <option value="usa">USA</option>
+        </select>
+        <br><br>
+
+        <!-- FILE INPUT -->
+        <label>Upload File:</label>
+        <input type="file" name="file">
+        <br><br>
+
+        <!-- DATE & TIME -->
+        <!-- NOTE: 'datetime' is deprecated → use 'datetime-local' -->
+        <label>Select Date & Time:</label>
+        <input type="datetime-local" name="datetime">
+        <br><br>
+
+        <!-- COLOR PICKER -->
+        <label>Choose Color:</label>
+        <input type="color" name="color">
+        <br><br>
+
+        <!-- GROUPED DROPDOWN -->
+        <label>Vehicle Type:</label>
+        <select name="vehicle">
+            <optgroup label="Cars">
+                <option value="porsche">Porsche</option>
+                <option value="mg">MG</option>
+            </optgroup>
+            <optgroup label="Bikes">
+                <option value="ktm">KTM</option>
+                <option value="bullet">Bullet</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!-- SUBMIT BUTTON -->
+        <input type="submit" value="Submit Form">
+
+        <!-- RESET BUTTON -->
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>

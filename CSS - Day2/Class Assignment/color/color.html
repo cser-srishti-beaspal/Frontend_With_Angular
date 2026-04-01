@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Color Types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .box {
+            width: 300px;
+            padding: 20px;
+            margin: 15px auto;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* 1. Named color */
+        .named {
+            background-color: red;
+        }
+
+        /* 2. RGB */
+        .rgb {
+            background-color: rgb(0, 128, 255);
+        }
+
+        /* 3. RGBA */
+        .rgba {
+            background-color: rgba(0, 128, 255, 0.5);
+            color: black;
+        }
+
+        /* 4. HSL */
+        .hsl {
+            background-color: hsl(120, 100%, 40%);
+        }
+
+        /* 5. HSLA */
+        .hsla {
+            background-color: hsla(120, 100%, 40%, 0.5);
+            color: black;
+        }
+
+        /* 6. HEX */
+        .hex {
+            background-color: #ff6600;
+        }
+
+        /* 7. RRGGBB */
+        .rrggbb {
+            background-color: #3366cc;
+        }
+
+        /* 8. RRGGBBAA */
+        .rrggbbaa {
+            background-color: #3366cc88;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Color Formats</h1>
+
+    <div class="box named">Named Color → red</div>
+    <div class="box rgb">RGB → rgb(0, 128, 255)</div>
+    <div class="box rgba">RGBA → rgba(0, 128, 255, 0.5)</div>
+    <div class="box hsl">HSL → hsl(120, 100%, 40%)</div>
+    <div class="box hsla">HSLA → hsla(120, 100%, 40%, 0.5)</div>
+    <div class="box hex">HEX → #ff6600</div>
+    <div class="box rrggbb">RRGGBB → #3366cc</div>
+    <div class="box rrggbbaa">RRGGBBAA → #3366cc88</div>
+
+</body>
+
+</html>

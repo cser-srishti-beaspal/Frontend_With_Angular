@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: serif;
+            margin: 40px;
+        }
+
+        /* HEADING */
+        h1 {
+            display: inline-block;
+            font-size: 40px;
+        }
+
+        .combinators {
+            background: #40e0d0;
+            padding: 5px 10px;
+        }
+
+        .and {
+            background: red;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        .pseudos {
+            background: #e91e63;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        /* LIST */
+        .container>ul {
+            margin-top: 30px;
+        }
+
+        .container>ul>li {
+            font-size: 20px;
+            margin: 10px 0;
+            position: relative;
+            cursor: pointer;
+        }
+
+        /* EVEN / ODD */
+        .container>ul>li:nth-child(odd) {
+            color: brown;
+        }
+
+        .container>ul>li:nth-child(even) {
+            color: purple;
+        }
+
+        /* HOVER COLOR */
+        .container>ul>li:hover {
+            color: crimson;
+        }
+
+        /* TOOLTIP */
+        .container>ul>li:hover::after {
+            content: attr(data-tip);
+            position: absolute;
+            left: 150px;
+            top: 0;
+            background: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>
+        <span class="combinators">Combinators</span>
+        <span class="and">&</span>
+        <span class="pseudos">Pseudos</span>
+    </h1>
+
+    <div class="container">
+        <ul>
+            <li data-tip="this is odd">Item1</li>
+            <li data-tip="this is even">Item2</li>
+            <li data-tip="this is odd">Item3</li>
+            <li data-tip="this is even">Item4</li>
+            <li data-tip="this is odd">Item5</li>
+            <li data-tip="this is even">Item6</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

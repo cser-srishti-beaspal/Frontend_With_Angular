@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 40px;
+            background-color: #3a3a3a;
+
+        }
+
+        nav>div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: #2ecc71;
+            border-radius: 50%;
+            margin-left: 5px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        nav i {
+            color: white;
+            font-size: 20px;
+        }
+
+        nav>div:first-child {
+            gap: 25px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div class="logo">
+                <img src="cdnjs.svg">
+            </div>
+            <div>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div>
+                <a href="#"><i class="fa-solid fa-comments"></i></a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#">About</a>
+            <a href="#">Libraries</a>
+            <a href="#">API</a>
+            <a href="#">GitHub</a>
+            <a href="#">Status <span class="dot"></span></a>
+        </div>
+    </nav>
+</body>
+
+</html>

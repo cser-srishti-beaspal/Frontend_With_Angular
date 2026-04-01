@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- ========================= -->
+    <!-- SECTION: Basic Table -->
+    <!-- ========================= -->
+
+    <h2>Basic Table</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>Charlie</td>
+                <td>35</td>
+                <td>Chicago</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- ========================= -->
+    <!-- SECTION: Advanced Table -->
+    <!-- ========================= -->
+
+    <h2>Employee Details Table</h2>
+
+    <table border="1">
+
+        <!-- Table Caption -->
+        <caption>Employee Details</caption>
+
+        <!-- Table Header -->
+        <thead>
+            <tr>
+                <th colspan="4">Employee Details</th>
+            </tr>
+            <tr>
+                <th>S.No</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ABC</td>
+                <td>30</td>
+                <!-- rowspan used to merge rows vertically -->
+                <td rowspan="3">IT</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>DEF</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>GHI</td>
+                <td>28</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+</html>

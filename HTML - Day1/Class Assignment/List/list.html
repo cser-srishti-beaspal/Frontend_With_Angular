@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ========================= -->
+    <!-- SECTION: Ordered Lists -->
+    <!-- ========================= -->
+    <ol>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+        <li>d</li>
+    </ol>
+    
+    <!-- NOTE: type="A" with start="27" will continue alphabetically -->
+    <ol type="A" start="27">
+        <li>hello</li>
+        <li>hi</li>
+        <li>bye</li>
+        <li>bye bye</li>
+    </ol>
+
+    <!-- ========================= -->
+    <!-- SECTION: Unordered Lists -->
+    <!-- ========================= -->
+    <ul type="square">
+        <li>hello</li>
+        <li>hi</li>
+        <li>bye</li>
+        <li>bye bye</li>
+    </ul>
+
+    <ul type="square">
+        <li>hello</li>
+        <li type = "disc">hi</li>
+        <li>bye</li>
+        <li>bye bye</li>
+    </ul>
+
+    <!-- ========================= -->
+    <!-- SECTION: Description List -->
+    <!-- ========================= -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+    <!-- ========================= -->
+    <!-- SECTION: Nested Lists (Correct Structure) -->
+    <!-- ========================= -->
+    <ul>
+        <li>Non Veg</li>
+        <ol>
+            <li>Chicken</li>
+            <li>Mutton</li>
+            <li>Fish</li>
+        </ol>
+        <li type="square" >Veg</li>
+        <ol type="I">
+            <li>Potato</li>
+            <li>Tomato</li>
+            <li>Onion</li>
+        </ol>
+    </ul>
+
+    <!-- ========================= -->
+    <!-- SECTION: Mixed Lists -->
+    <!-- ========================= -->
+    <dl>
+        <dt>Courses</dt>
+        <dd>Frontend
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ol>
+        </dd>
+        <dd>Backend
+        <ul>
+            <li type = "square">java</li>
+            <li type="none">python</li>
+            <li type="circle">node</li>
+        </ul>
+        </dd>
+    </dl>
+
+    <!-- ========================= -->
+    <!-- SECTION: Text + List Combo -->
+    <!-- ========================= -->
+    <ul>
+        <li type="square">good morning <i>all</i></li>
+        <li type="circle">the <mark>temperature </mark>is<b> 35 <sup>°C</sup></b></li>
+        <li type="none">that's all folks</li>
+    </ul>
+
+
+
+
+</body>
+</html>

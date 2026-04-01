@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <table>
+                <tr>
+                    <td>Employee Name</td>
+                    <td>
+                        <input type="text" name="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Job</td>
+                    <td>
+                        <select>
+                            <option selected>Select A Job</option>
+                            <option>developer</option>
+                            <option>manager</option>
+                            <option>analyst</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Re-enter Password</td>
+                    <td>
+                        <input type="password" name="repassword" placeholder="Confirm your password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Birthday</td>
+                    <td>
+                        <input type="date" name="birthday" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salary</td>
+                    <td>
+                        <input type="number" name="salary">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Commission</td>
+                    <td>
+                        <input type="number" name="commission">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total Salary</td>
+                    <td>
+                        <input type="number" name="total_salary" placeholder="NaN" >
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>

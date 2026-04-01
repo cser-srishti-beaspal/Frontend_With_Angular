@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/* ================== MARGIN ================== */
+
+/* 1 value → all sides */
+.box1 {
+  margin: 20px;
+}
+
+/* 2 values → top-bottom | left-right */
+.box2 {
+  margin: 20px 40px;
+}
+
+/* 3 values → top | left-right | bottom */
+.box3 {
+  margin: 10px 30px 50px;
+}
+
+/* 4 values → top right bottom left (TRBL) */
+.box4 {
+  margin: 10px 20px 30px 40px;
+}
+
+/* Individual margin */
+.box5 {
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+/* Auto → center horizontally */
+.box6 {
+  width: 200px;
+  margin: auto;
+}
+
+/* Negative margin */
+.box7 {
+  margin-top: -10px;
+}
+
+/* ================== PADDING ================== */
+
+/* 1 value → all sides */
+.pad1 {
+  padding: 10px;
+}
+
+/* 2 values → top-bottom | left-right */
+.pad2 {
+  padding: 10px 20px;
+}
+
+/* 3 values → top | left-right | bottom */
+.pad3 {
+  padding: 10px 20px 30px;
+}
+
+/* 4 values → top right bottom left */
+.pad4 {
+  padding: 5px 10px 15px 20px;
+}
+
+/* Individual padding */
+.pad5 {
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+}
+
+/* ================== BORDER ================== */
+
+/* Basic border → width style color */
+.border1 {
+  border: 2px solid black;
+}
+
+/* Different border styles */
+.border2 {
+  border: 3px dashed red;
+}
+
+.border3 {
+  border: 3px dotted blue;
+}
+
+/* Individual borders */
+.border4 {
+  border-top: 3px solid green;
+  border-bottom: 3px dashed orange;
+  border-left: 3px dotted purple;
+  border-right: 3px solid black;
+}
+
+/* Rounded border */
+.border5 {
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* ================== COMMON BOX STYLE ================== */
+div {
+  background-color: lightblue;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Margin Examples</h2>
+<div class="box1">Margin 1 value</div>
+<div class="box2">Margin 2 values</div>
+<div class="box3">Margin 3 values</div>
+<div class="box4">Margin 4 values</div>
+<div class="box5">Individual margin</div>
+<div class="box6">Centered using margin auto</div>
+<div class="box7">Negative margin</div>
+
+<h2>Padding Examples</h2>
+<div class="pad1">Padding 1 value</div>
+<div class="pad2">Padding 2 values</div>
+<div class="pad3">Padding 3 values</div>
+<div class="pad4">Padding 4 values</div>
+<div class="pad5">Individual padding</div>
+
+<h2>Border Examples</h2>
+<div class="border1">Solid border</div>
+<div class="border2">Dashed border</div>
+<div class="border3">Dotted border</div>
+<div class="border4">Different sides border</div>
+<div class="border5">Rounded border</div>
+
+</body>
+</html>

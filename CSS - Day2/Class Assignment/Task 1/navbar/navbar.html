@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Reset */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* vertical alignment */
+            background-color: #3a3a3a;
+            padding: 10px 20px;
+        }
+
+        /* All nav sections */
+        nav>div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /* Links */
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        /* Hover effect */
+        nav a:hover {
+            color: #f1c40f;
+        }
+
+        /* Icons */
+        nav i {
+            font-size: 18px;
+        }
+
+        /* Logo style */
+        nav>div:first-child i {
+            font-size: 22px;
+            color: #f1c40f;
+        }
+
+        /* Right side text */
+        nav div {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div>
+                <a href="#"><i class="fa-regular fa-font-awesome"></i></a>
+            </div>
+            <div><a href="#">home</a></div>
+            <div><a href="#">contact</a></div>
+        </div>
+        <div>
+            <div>
+                <input type="text" placeholder="Search..." style="padding: 5px; border-radius: 5px; border: grey; box-shadow: #2c3e50;"> 
+
+            </div>
+            <div><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></div>
+        </div>
+        <div>
+            <div><a href="#"><i class="fa-solid fa-image-portrait"></i></i></a></div>
+            <div><a href="#">logout</a></div>
+        </div>
+    </nav>
+</body>
+
+</html>
