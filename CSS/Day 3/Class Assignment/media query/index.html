@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            background-color: lightblue;
+            height: 70px;
+        }
+
+        @media screen and (max-width: 600px) {
+            nav{
+                background-color: lightcoral;
+            }
+            p{
+                display: none;
+                /* it will hide the element */ 
+                /* visibility: hidden; */
+                /* it will store the element in memory but not display it */
+            }
+
+            body>div{
+                flex-direction: column;
+            }
+        }
+        body>div{
+            height: 400px;
+            width: 400px;
+            border: solid black 2px;
+            display: flex;
+        }
+
+        div div{
+            height: 100px;
+            width: 100px;
+            border: solid red 2px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <nav>   
+    </nav>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Accusamus earum porro consequatur eos deserunt magnam commodi 
+        quasi dignissimos repellat perspiciatis. Ab delectus ipsa vel 
+        quam provident quas perspiciatis facere aperiam.
+    </p>
+    <h1>heading 1</h1>
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
