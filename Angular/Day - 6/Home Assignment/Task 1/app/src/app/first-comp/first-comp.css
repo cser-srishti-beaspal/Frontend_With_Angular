@@ -1,0 +1,8 @@
+.classA{
+    background-color : beige;
+    border : solid 5px black;
+}
+.classB{
+    background-color : pink;
+    border : solid 5px beige;
+}

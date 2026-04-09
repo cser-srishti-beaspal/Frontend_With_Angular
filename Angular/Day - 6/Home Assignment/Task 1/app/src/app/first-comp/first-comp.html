@@ -1,0 +1,38 @@
+
+<div [ngSwitch]="applyClass">
+
+    <h1 *ngSwitchCase="true" class="classA">
+        using NgSwitch Condn TRUE
+    </h1>
+
+    <h1 *ngSwitchCase="false" class="classB">
+        using NgSwitch Condn FALSE
+    </h1>
+
+    <h1 *ngSwitchDefault>
+        No Condn Match
+    </h1>
+
+</div>
+
+<button (click)="shouldApplyClass()">Toggle Condition</button>
+
+
+@switch (applyClass) {
+@case (true) {
+
+<h1 class="classA">
+    using Switch Case Condn TRUE
+</h1>
+}
+@case (false) {
+<h1 class="classB">
+    using Switch Case Condn FALSE
+</h1>
+}
+@default {
+<h1>
+    No Condition Matched
+</h1>
+}
+}

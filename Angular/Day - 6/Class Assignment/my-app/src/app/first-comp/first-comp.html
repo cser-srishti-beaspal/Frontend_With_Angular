@@ -1,0 +1,70 @@
+<!-- <h1 [ngClass]="{
+     classA:applyClass,
+     classB:!applyClass
+}">NG class</h1>
+<h1 [ngStyle]="{
+    color:'pink'
+}">NG Class</h1>
+<app-childcomp></app-childcomp> -->
+
+<!-- use structural -->
+<h1 *ngIf="applyClass">NGClass true</h1>
+<h1 *ngIf="!applyClass">NGClass false</h1>
+
+<!-- control block -->
+@if(applyClass){
+    <h1 >condn is true</h1>
+}@else {
+    <h1>condn is false</h1>
+}
+<button (click)="shouldApply()">click to change classess</button>
+
+<ul>
+    @for (item of arr; track item){<!-- $index contextual variable -->
+        <li>{{item}}</li>
+    }@empty {
+        <h1>nthing to display</h1>
+    }   
+</ul>
+
+<ol>
+    <li *ngFor="let ele of arr">{{ele}}</li>
+</ol>
+
+
+<table border="2px">
+    @for (item of arr; track item){
+        <tr>
+            {{item}}
+        </tr>
+    }@empty {
+        <tr>
+            nthing to display
+        </tr>
+    }
+</table>
+<br><br>
+<table border="2px">
+    <tr *ngFor="let ele of arr">{{ele}}</tr>
+</table>
+
+@switch (role) {
+  @case ('admin') {
+    <p>Admin Dashboard</p>
+  }
+  @case ('user') {
+    <p>User Dashboard</p>
+  }
+  @default {
+    <p>Guest Dashboard</p>
+  }
+}
+
+<div [ngSwitch]="role">
+  <p *ngSwitchCase="'admin'">Admin Dashboard</p>
+  <p *ngSwitchCase="'user'">User Dashboard</p>
+  <p *ngSwitchDefault="">Guest Dashboard</p>
+</div>
+<h1>{{test.namesArr}}</h1>
+
+
