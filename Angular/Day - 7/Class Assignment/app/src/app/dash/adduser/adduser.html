@@ -1,0 +1,30 @@
+<!-- <p>adduser works!</p>
+<form action="" (ngSubmit)="handleSubmit()">
+    <div><input type="text" placeholder="name" [(ngModel)]="UserData.name" name="name"></div>
+    <div><input type="text" placeholder="role" [(ngModel)]="UserData.role" name="role"></div>
+    <div><input type="text" placeholder="image" [(ngModel)]="UserData.image" name="image"></div>
+    <button type="submit" >add user</button>
+    <legend>Add a new User</legend>
+</form> -->
+
+<p>Add User</p>
+
+<form #userForm="ngForm" (ngSubmit)="handleSubmit(userForm.value)">
+
+    <legend>Add a new User</legend>
+
+    <div>
+        <input type="text" placeholder="name" [(ngModel)]="UserData.name" name="name" required>
+    </div>
+
+    <div>
+        <input type="text" placeholder="role" [(ngModel)]="UserData.role" name="role" required>
+    </div>
+
+    <div>
+        <input type="text" placeholder="image" [(ngModel)]="UserData.image" name="image" required>
+    </div>
+
+    <button type="submit">Add User</button>
+
+</form>

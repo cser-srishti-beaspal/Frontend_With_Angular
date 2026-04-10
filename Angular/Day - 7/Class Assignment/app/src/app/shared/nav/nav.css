@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    gap: 20px;
+    height: 70px;
+    background-color: pink;
+    padding: 20px;
+    align-items: center;
+}
+.active{
+    border: solid 2px white;
+    color: white;
+
+}

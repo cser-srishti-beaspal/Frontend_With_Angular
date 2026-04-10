@@ -1,0 +1,31 @@
+.user-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.user-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  width: 220px;
+  background:rgb(251, 178, 223);
+}
+
+.user-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.user-info h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.user-info p {
+  margin: 0;
+  color: gray;
+  font-size: 14px;
+}

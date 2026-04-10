@@ -1,0 +1,16 @@
+<h2>Tasks Dashboard</h2>
+
+<div style="margin-bottom:20px;">
+  <button (click)="applyFilter('all')">All</button>
+  <button (click)="applyFilter('pending')">Pending</button>
+  <button (click)="applyFilter('finished')">Finished</button>
+</div>
+
+<div *ngFor="let task of filteredTasks" 
+     style="border:1px solid #ccc; padding:10px; margin:10px;">
+
+  {{task.title}} — {{task.status}}
+
+  
+
+</div>

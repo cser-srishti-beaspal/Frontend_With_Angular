@@ -1,0 +1,15 @@
+section{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    border: 5px dotted bisque;
+}
+
+section>div:first-child{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    background-color: plum;
+    flex-direction: column;
+
+}
