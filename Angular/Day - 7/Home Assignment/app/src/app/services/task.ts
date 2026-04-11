@@ -14,5 +14,5 @@ export class Task {
 
   getTasks(){
     return this.tasks;
-  }
+  };
 }

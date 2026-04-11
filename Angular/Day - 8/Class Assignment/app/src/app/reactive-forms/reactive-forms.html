@@ -1,0 +1,46 @@
+<p>reactive-forms works!</p>
+<form (ngSubmit)="handleSubmit()" [formGroup]="loginForm">
+    <fieldset>
+        <legend>Login Form</legend>
+        <div>
+            <input type="email" placeholder="email" formControlName="email">
+            @if(loginForm.controls.email.errors?.['email']){
+                <p>the email is invalid</p>
+            }
+        </div>
+        <div>
+            <input type="text" placeholder="password" formControlName="password">
+            @if(loginForm.controls.password.errors?.['minlength']){
+                <p>the min length </p>
+            }
+        </div>
+        <div>
+            <input type="text" placeholder="Confirm password" formControlName="conpass">
+            @if(loginForm.controls.password.value!=loginForm.controls.conpass.value && loginForm.controls.conpass.dirty){
+                <p style="color: red;">pass mismatched</p>
+            }
+        </div>
+        <div>
+            <select name="currency" id="" formControlName="currency">
+                <option value="ind">IND</option>
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+            </select>
+        </div>
+        <div>
+            <label for="male">Male<input type="radio" name="gender" value="male"id="male" formControlName="gender"></label>
+            <label for="female">FeMale<input type="radio" name="gender" value="female" id="female" formControlName="gender"></label>
+            <label for="other">Other<input type="radio" name="gender" id="other" value="others" formControlName="gender"></label>
+        </div>
+        <div>
+            <label for="">i agree termsn condn<input type="checkbox" id="ch1" formControlName="tnc"></label>
+        </div>
+        <div>
+            <label for="ch2" (change)="handleCheckboxes($event)">java<input type="checkbox" id="ch2" value="java"></label>
+            <label for="ch3" (change)="handleCheckboxes($event)">python<input type="checkbox" id="ch3" value="python"></label>
+            <label for="ch4" (change)="handleCheckboxes($event)">html<input type="checkbox" id="ch4" value="html"></label>
+            <label for="ch5" (change)="handleCheckboxes($event)">C<input type="checkbox" id="ch5" value="c"></label>
+        </div>
+        <button type="submit">submit</button>
+    </fieldset>
+</form>
